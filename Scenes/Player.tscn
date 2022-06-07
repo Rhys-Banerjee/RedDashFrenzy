@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/Characters/character_0003.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Characters/character_0002.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Player.gd" type="Script" id=3]
+
+[sub_resource type="CapsuleShape2D" id=17]
+height = 0.0
+
+[sub_resource type="SpriteFrames" id=16]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "dash",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=18]
+height = 4.0
+
+[node name="Player" type="KinematicBody2D" groups=["Player"]]
+script = ExtResource( 3 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.15
+one_shot = true
+
+[node name="WinArea" type="Area2D" parent="."]
+collision_layer = 16384
+collision_mask = 16384
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WinArea"]
+shape = SubResource( 17 )
+
+[node name="HazardArea" type="Area2D" parent="."]
+collision_layer = 32768
+collision_mask = 32768
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HazardArea"]
+shape = SubResource( 17 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 16 )
+animation = "dash"
+
+[node name="quit yelling" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource( 18 )
