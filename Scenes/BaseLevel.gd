@@ -11,6 +11,7 @@ var currentPlayerNode = null
 func _ready():
 	spawnPosition = $Player.global_position
 	register_player($Player)
+	$Goal.connect("player_won",self,"on_player_won")
 
 
 func register_player(player):
@@ -26,3 +27,6 @@ func create_player():
 func on_player_died():
 	currentPlayerNode.queue_free()
 	create_player()
+	
+func on_player_won():
+	$"/root/LevelManager".increment_level()

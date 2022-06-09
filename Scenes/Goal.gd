@@ -8,5 +8,5 @@ func _ready():
 	$Area2D.connect("area_entered", self, "on_area_entered")
 	
 func on_area_entered(_area2d):
-	print("won!")
+	print("win!")
 	emit_signal("player_won")
