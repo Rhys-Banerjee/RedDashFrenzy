@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Tiles/tile_0091.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 31.5, 10 )
+
+[node name="gravityChanger" type="Node2D"]
+
+[node name="gravityChangerArea" type="Area2D" parent="."]
+collision_layer = 8192
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="gravityChangerArea"]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 0.741176, 0, 0, 1 )
+scale = Vector2( 3.5, 1 )
+texture = ExtResource( 1 )

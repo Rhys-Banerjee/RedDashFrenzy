@@ -32,6 +32,11 @@ func _process(delta):
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$HazardArea.connect("area_entered", self, "on_hazard_area_entered")
+	$gravityArea.connect("area_entered", self, "on_gravity_area_entered")
 	
 func on_hazard_area_entered(area2d):
 	emit_signal("died")
+
+func on_gravity_area_entered(area2d):
+	GRAVITY *= -1
+	$AnimatedSprite.flip_v = true if $AnimatedSprite.flip_v == false else false
