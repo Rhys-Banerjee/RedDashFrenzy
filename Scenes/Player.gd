@@ -8,7 +8,7 @@ var GRAVITY = 25000
 var velocity = Vector2.ZERO
 var maxHorizontalSpeed = 140
 var isStateNew = true
-
+var spring = 200
 #copy the processes from tutorial. This just isn't fun.
 
 func _process(delta):
@@ -33,6 +33,7 @@ func _process(delta):
 func _ready():
 	$HazardArea.connect("area_entered", self, "on_hazard_area_entered")
 	$gravityArea.connect("area_entered", self, "on_gravity_area_entered")
+	$Boost.connect("area_entered", self, "on_boost_area_entered")
 	
 func on_hazard_area_entered(area2d):
 	emit_signal("died")
@@ -40,3 +41,6 @@ func on_hazard_area_entered(area2d):
 func on_gravity_area_entered(area2d):
 	GRAVITY *= -1
 	$AnimatedSprite.flip_v = true if $AnimatedSprite.flip_v == false else false
+
+func on_boost_area_entered(area2d):
+	velocity.y = -1

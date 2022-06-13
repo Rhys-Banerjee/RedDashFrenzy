@@ -73,6 +73,7 @@ reset={
 
 [layer_names]
 
+2d_physics/layer_13="BOOST"
 2d_physics/layer_14="GRAVITY"
 2d_physics/layer_15="GOAL"
 2d_physics/layer_16="HAZARDS"
