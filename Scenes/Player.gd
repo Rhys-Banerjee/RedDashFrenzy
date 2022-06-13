@@ -16,7 +16,8 @@ func _process(delta):
 		emit_signal("died")
 	#todo: gravity while in air is different than gravity whilst in a "combo"
 	velocity.y = 0
-	
+	if ($boostTimer.is_stopped()):
+		GRAVITY = 25000
 	if Input.is_action_just_pressed("right"):
 		$Timer.start()
 		velocity = Vector2(maxDashSpeed, 0)
@@ -43,4 +44,5 @@ func on_gravity_area_entered(area2d):
 	$AnimatedSprite.flip_v = true if $AnimatedSprite.flip_v == false else false
 
 func on_boost_area_entered(area2d):
-	velocity.y = -1
+	$boostTimer.start()
+	GRAVITY = -30000
