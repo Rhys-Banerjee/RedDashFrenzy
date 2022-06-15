@@ -10,7 +10,7 @@
 [ext_resource path="res://Scenes/Levels/level__007.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/Levels/level__008.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/Levels/level__009.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Scenes/Levels/level__010.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/Levels/level__011.tscn" type="PackedScene" id=11]
 
 [node name="LevelManager" type="Node"]
 script = ExtResource( 1 )
