@@ -478,22 +478,22 @@ position = Vector2( -342, -26 )
 rotation = -1.5708
 
 [node name="Player" parent="." index="4"]
-position = Vector2( 56, -338 )
+position = Vector2( -180, -140 )
 
 [node name="gravityChanger" parent="gravity" index="0" instance=ExtResource( 2 )]
 position = Vector2( -111, -65 )
 rotation = -1.5708
-scale = Vector2( 0.85176, 1.48 )
+scale = Vector2( 0.852, 0.524 )
 
 [node name="gravityChanger2" parent="gravity" index="1" instance=ExtResource( 2 )]
 position = Vector2( -111, -259 )
 rotation = -1.5708
-scale = Vector2( 0.85176, 1.48 )
+scale = Vector2( 0.85176, 0.524034 )
 
 [node name="gravityChanger3" parent="gravity" index="2" instance=ExtResource( 2 )]
 position = Vector2( -111, 37 )
 rotation = -1.5708
-scale = Vector2( 1.2258, 1.48 )
+scale = Vector2( 1.226, 0.524 )
 
 [node name="gravityChanger4" parent="gravity" index="3" instance=ExtResource( 2 )]
 position = Vector2( 195, -359 )

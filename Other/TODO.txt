@@ -1,0 +1,20 @@
+TODO:
+
+come up with title
+- Dash Frenzy
+
+
+level UI
+- Level Complete
+- Main menu
+- Level navigation
+- "Quit to menu (P)"
+- "R to restart"
+
+Music and SFX
+- General theme
+- Maybe cycle between songs
+   - But probably choose a looping song.
+
+FX
+- Dash effect
