@@ -11,7 +11,7 @@
 tile_data = PoolIntArray( -1179624, 3, 0, -1179623, 3, 1, -1179622, 3, 1, -1179621, 3, 1, -1179620, 3, 1, -1179619, 3, 1, -1179618, 3, 1, -1179617, 3, 1, -1179616, 3, 1, -1179615, 3, 1, -1179614, 3, 1, -1179613, 3, 1, -1179612, 3, 1, -1179611, 3, 1, -1179610, 3, 1, -1179609, 3, 2, -1114088, 3, 131072, -1114087, 3, 131073, -1114086, 3, 131073, -1114085, 3, 131073, -1114084, 3, 131073, -1114083, 3, 131073, -1114082, 3, 131073, -1114081, 3, 131073, -1114080, 3, 131073, -1114079, 3, 131073, -1114078, 3, 131073, -1114077, 3, 131073, -1114076, 3, 131073, -1114075, 3, 131073, -1114074, 3, 131073, -1114073, 3, 131074, -917486, 3, 0, -917485, 3, 1, -917484, 3, 2, -851950, 3, 131072, -851949, 3, 131073, -851948, 3, 131074, -524277, 3, 0, -524276, 3, 1, -524275, 3, 1, -524274, 3, 1, -524273, 3, 1, -524272, 3, 1, -524271, 3, 2, -458741, 3, 131072, -458740, 3, 131073, -458739, 3, 131073, -458738, 3, 131073, -458737, 3, 131073, -458736, 3, 131073, -458735, 3, 131074, -262154, 3, 0, -262153, 3, 1, -262152, 3, 1, -262151, 3, 1, -262150, 3, 1, -262149, 3, 1, -262148, 3, 1, -262147, 3, 1, -262146, 3, 1, -262145, 3, 1, -327680, 3, 1, -327679, 3, 1, -327678, 3, 1, -327677, 3, 1, -327676, 3, 1, -327675, 3, 1, -327674, 3, 1, -327673, 3, 1, -327672, 3, 2, -196618, 3, 131072, -196617, 3, 131073, -196616, 3, 131073, -196615, 3, 131073, -196614, 3, 131073, -196613, 3, 131073, -196612, 3, 131073, -196611, 3, 131073, -196610, 3, 131073, -196609, 3, 131073, -262144, 3, 131073, -262143, 3, 131073, -262142, 3, 131073, -262141, 3, 131073, -262140, 3, 131073, -262139, 3, 131073, -262138, 3, 131073, -262137, 3, 131073, -262136, 3, 131074, 2, 0, 0 )
 
 [node name="Goal" parent="." index="2"]
-position = Vector2( -159, -91 )
+position = Vector2( -128, -90 )
 
 [node name="Hazards" parent="." index="3"]
 position = Vector2( 0, 1 )
@@ -94,11 +94,34 @@ position = Vector2( 80, -91 )
 [node name="Spike6" parent="Hazards/SpikeArea3" index="5" instance=ExtResource( 3 )]
 position = Vector2( 62, -91 )
 
-[node name="voidDeath" parent="Hazards" index="3" instance=ExtResource( 4 )]
+[node name="SpikeArea4" type="Node2D" parent="Hazards" index="3"]
+
+[node name="Spike" parent="Hazards/SpikeArea4" index="0" instance=ExtResource( 3 )]
+position = Vector2( -160, -100 )
+rotation = -1.5708
+
+[node name="Spike2" parent="Hazards/SpikeArea4" index="1" instance=ExtResource( 3 )]
+position = Vector2( -160, -118 )
+rotation = -1.5708
+
+[node name="Spike3" parent="Hazards/SpikeArea4" index="2" instance=ExtResource( 3 )]
+position = Vector2( -160, -135 )
+rotation = -1.5708
+
+[node name="Spike4" parent="Hazards/SpikeArea4" index="3" instance=ExtResource( 3 )]
+position = Vector2( -117, -142 )
+
+[node name="Spike5" parent="Hazards/SpikeArea4" index="4" instance=ExtResource( 3 )]
+position = Vector2( -151, -142 )
+
+[node name="Spike6" parent="Hazards/SpikeArea4" index="5" instance=ExtResource( 3 )]
+position = Vector2( -134, -142 )
+
+[node name="voidDeath" parent="Hazards" index="4" instance=ExtResource( 4 )]
 position = Vector2( -847, -191 )
 scale = Vector2( 3.52258, 1.26821 )
 
-[node name="voidDeath2" parent="Hazards" index="4" instance=ExtResource( 4 )]
+[node name="voidDeath2" parent="Hazards" index="5" instance=ExtResource( 4 )]
 position = Vector2( -852, -945 )
 scale = Vector2( 3.52258, 1.26821 )
 
