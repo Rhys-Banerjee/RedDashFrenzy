@@ -1,5 +1,6 @@
 extends Node2D
 
+export(PackedScene) var levelCompleteScene
 
 var playerScene = preload("res://scenes/Player.tscn")
 var spawnPosition = Vector2.ZERO
@@ -30,4 +31,7 @@ func on_player_died():
 	create_player()
 	
 func on_player_won():
-	$"/root/LevelManager".increment_level()
+	currentPlayerNode.queue_free()
+	var levelComplete = levelCompleteScene.instance()
+	add_child(levelComplete)
+	
