@@ -228,12 +228,16 @@ position = Vector2( 0, 0 )
 zoom = Vector2( 3, 3 )
 
 [node name="TileMap" type="TileMap" parent="."]
+modulate = Color( 1, 0, 0, 1 )
+self_modulate = Color( 1, 0, 0, 1 )
 tile_set = SubResource( 14 )
 cell_size = Vector2( 18, 18 )
 format = 1
 tile_data = PoolIntArray( 2, 0, 0 )
 
 [node name="Goal" parent="." instance=ExtResource( 2 )]
+modulate = Color( 1, 0.0117647, 0.0117647, 1 )
+self_modulate = Color( 1, 0, 0, 1 )
 
 [node name="Hazards" type="Node2D" parent="."]
 
@@ -241,5 +245,7 @@ tile_data = PoolIntArray( 2, 0, 0 )
 position = Vector2( -1, -1 )
 
 [node name="gravity" type="Node2D" parent="."]
+modulate = Color( 0.847059, 0.298039, 0, 1 )
 
 [node name="boosts" type="Node2D" parent="."]
+modulate = Color( 0.756863, 0, 1, 1 )

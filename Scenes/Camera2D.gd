@@ -2,9 +2,14 @@ extends Camera2D
 
 var targetPosition = Vector2.ZERO
 
-#export(Color, RGB) var backgroundColor
+export(Color, RGB) var backgroundColor
+
+func _ready():
+	VisualServer.set_default_clear_color(backgroundColor)
+
 func _init():
 	current = true
+
 
 func _process(delta):
 	acquire_target_position()

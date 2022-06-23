@@ -63,6 +63,7 @@ collision_mask = 32768
 shape = SubResource( 17 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+modulate = Color( 1, 0, 0, 1 )
 frames = SubResource( 16 )
 animation = "dash"
 

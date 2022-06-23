@@ -8,8 +8,6 @@ extents = Vector2( 16, 5 )
 [node name="Boost" type="Node2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
-modulate = Color( 0.764706, 0.815686, 0.952941, 1 )
-self_modulate = Color( 0.423529, 0.4, 0.819608, 1 )
 scale = Vector2( 1.7416, 0.561539 )
 texture = ExtResource( 1 )
 
