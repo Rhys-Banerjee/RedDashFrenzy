@@ -1,7 +1,14 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Main Menu.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/CameraMainMenu.gd" type="Script" id=2]
+[ext_resource path="res://Assets/NewgroundsFont-Regular.otf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 39
+outline_size = 7
+outline_color = Color( 0.113725, 0.0705882, 0.0705882, 1 )
+font_data = ExtResource( 3 )
 
 [node name="Main Menu" type="CanvasLayer"]
 script = ExtResource( 1 )
@@ -10,6 +17,8 @@ script = ExtResource( 1 )
 modulate = Color( 1, 0, 0, 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_top = 1.0
+margin_bottom = 1.0
 
 [node name="PanelContainer" type="PanelContainer" parent="MarginContainer"]
 margin_left = 112.0
@@ -45,3 +54,12 @@ text = "Quit Game"
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 160, 90 )
 script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_top = 15.0
+margin_right = 320.0
+margin_bottom = 58.0
+custom_colors/font_color = Color( 0.694118, 0.156863, 0.156863, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "RED DASH FRENZY"
+align = 1

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/33112_newgrounds_madnes.mp3-260e1441f034eb03326b4885d098cee2.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/33112_newgrounds_madnes.mp3"
+dest_files=[ "res://.import/33112_newgrounds_madnes.mp3-260e1441f034eb03326b4885d098cee2.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
