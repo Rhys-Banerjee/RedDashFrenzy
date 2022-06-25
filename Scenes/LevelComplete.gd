@@ -10,6 +10,8 @@ func _ready():
 func _process(delta):
 	if Input.is_action_pressed("space"):
 		$"/root/LevelManager".increment_level()
+	if Input.is_action_pressed("reset"):
+		$"/root/LevelManager".reset_level()
 #func on_next_button_pressed():
 	#$"/root/LevelManager".increment_level()
 
