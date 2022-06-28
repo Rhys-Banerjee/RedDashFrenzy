@@ -67,7 +67,7 @@ modulate = Color( 1, 0, 0, 1 )
 frames = SubResource( 16 )
 animation = "dash"
 
-[node name="quit yelling" type="CollisionShape2D" parent="."]
+[node name="quityelling" type="CollisionShape2D" parent="."]
 visible = false
 shape = SubResource( 18 )
 
