@@ -72,5 +72,13 @@ position = Vector2( -351, 486 )
 [node name="voidDeath" parent="Hazards" index="19" instance=ExtResource( 3 )]
 position = Vector2( -301, 303 )
 
+[node name="voidDeath2" parent="Hazards" index="20" instance=ExtResource( 3 )]
+position = Vector2( -199, 299 )
+rotation = 1.5708
+
+[node name="voidDeath3" parent="Hazards" index="21" instance=ExtResource( 3 )]
+position = Vector2( 872, 298 )
+rotation = 1.5708
+
 [node name="Player" parent="." index="4"]
 position = Vector2( -431, 12 )

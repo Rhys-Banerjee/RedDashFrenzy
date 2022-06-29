@@ -12,6 +12,10 @@ var spring = 200
 #copy the processes from tutorial. This just isn't fun.
 
 func _process(delta):
+	if !$Timer.is_stopped():
+		$DashParticle.emitting = true
+	else:
+		$DashParticle.emitting = false
 	if Input.is_action_pressed("reset"):
 		emit_signal("died")
 	#todo: gravity while in air is different than gravity whilst in a "combo"
@@ -23,9 +27,11 @@ func _process(delta):
 	#if ($boostTimer.is_stopped()):
 	#	GRAVITY = 25000
 	if Input.is_action_just_pressed("right"):
+		
 		$Timer.start()
 		velocity = Vector2(maxDashSpeed, 0)
 	elif Input.is_action_just_pressed("left"):
+		
 		$Timer.start()
 		velocity.y = 0
 		velocity = Vector2(-maxDashSpeed, 0)

@@ -14,5 +14,15 @@ position = Vector2( 482, 108 )
 [node name="voidDeath" parent="Hazards" index="0" instance=ExtResource( 2 )]
 scale = Vector2( 2.81502, 0.959592 )
 
+[node name="voidDeath2" parent="Hazards" index="1" instance=ExtResource( 2 )]
+position = Vector2( -146, 14 )
+rotation = 1.5708
+scale = Vector2( 2.81502, 0.959592 )
+
+[node name="voidDeath3" parent="Hazards" index="2" instance=ExtResource( 2 )]
+position = Vector2( 985, -19 )
+rotation = 1.5708
+scale = Vector2( 2.81502, 0.959592 )
+
 [node name="Player" parent="." index="4"]
 position = Vector2( -227, 14 )

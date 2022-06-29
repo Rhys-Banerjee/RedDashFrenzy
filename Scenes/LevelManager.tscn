@@ -12,20 +12,8 @@
 [ext_resource path="res://Scenes/Levels/level__009.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scenes/Levels/level__011.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Scenes/Levels/end.tscn" type="PackedScene" id=12]
-
-[sub_resource type="PackedScene" id=1]
-_bundled = {
-"conn_count": 0,
-"conns": PoolIntArray(  ),
-"editable_instances": [  ],
-"names": PoolStringArray( "Main", "position", "Node2D", "Main Menu" ),
-"node_count": 2,
-"node_paths": [  ],
-"nodes": PoolIntArray( -1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 2147483647, 3, 1, 0, 0 ),
-"variants": [ Vector2( 14, 3 ), ExtResource( 7 ) ],
-"version": 2
-}
+[ext_resource path="res://Scenes/Levels/level__tutorial.tscn" type="PackedScene" id=13]
 
 [node name="LevelManager" type="Node"]
 script = ExtResource( 1 )
-levelScenes = [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 8 ), ExtResource( 6 ), ExtResource( 10 ), ExtResource( 9 ), ExtResource( 3 ), ExtResource( 11 ), ExtResource( 12 ), SubResource( 1 ) ]
+levelScenes = [ ExtResource( 13 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 8 ), ExtResource( 6 ), ExtResource( 10 ), ExtResource( 9 ), ExtResource( 3 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 7 ) ]

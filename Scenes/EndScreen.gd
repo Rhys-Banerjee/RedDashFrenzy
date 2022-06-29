@@ -8,4 +8,4 @@ func _ready():
 
 func _process(delta):
 	if Input.is_action_just_pressed("space"):
-		$"/root/LevelManager".change_level(10)
+		$"/root/LevelManager".increment_level()
