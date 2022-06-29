@@ -8,9 +8,9 @@ func _ready():
 	pass
 	
 func _process(delta):
-	if Input.is_action_pressed("space"):
+	if Input.is_action_just_pressed("space"):
 		LevelManager.increment_level()
-	if Input.is_action_pressed("reset"):
+	if Input.is_action_just_pressed("reset"):
 		LevelManager.reset_level()
 #func on_next_button_pressed():
 	#$"/root/LevelManager".increment_level()

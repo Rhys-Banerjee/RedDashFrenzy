@@ -2,7 +2,7 @@ extends Node2D
 
 export(PackedScene) var levelCompleteScene
 
-var playerScene = preload("res://scenes/Player.tscn")
+var playerScene = preload("res://Scenes/Player.tscn")
 var spawnPosition = Vector2.ZERO
 var currentPlayerNode = null
 

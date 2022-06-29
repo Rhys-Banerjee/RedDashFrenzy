@@ -7,7 +7,6 @@ var currentLevelIndex = 0
 
 
 func change_level(levelIndex):
-	print("does this work?")
 	currentLevelIndex = levelIndex
 	#if (currentLevelIndex >= levelScenes.size()):
 		#currentLevelIndex = 0
