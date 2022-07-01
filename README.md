@@ -1,7 +1,8 @@
 # RedDashFrenzy
-The game is currently playable yet it breaks upon export to Windows and HTML5. Currently working on a fix. Once I get that fixed I'll upload it to Itch.io in an online build so that it's easier to play but until then this is the only way to play it.
+The game is currently playable on [Itch.io](https://riceban.itch.io/red-dash-frenzy). If you'd like to look at the source code, or play the game in the Godot engine, follow the steps below:
 
-## How to play the game:
+
+## How to play the game in the Godot Engine
 ### 1.) Download the Godot game engine.
 Godot is a free and open source game engine which I used to develop this game. Here is a link to download: https://godotengine.org/.
 
